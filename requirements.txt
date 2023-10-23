@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+llama-cpp-python
+langchain
+pypdf
+unstructured
+pdf2image
+pdfminer.six
+faiss-cpu
+sentence-transformers
