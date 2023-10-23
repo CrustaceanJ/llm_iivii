@@ -1,7 +1,15 @@
-```#sh
-    docker build --network=host --tag llm_crustacean:v1 .
+### 1. Put your model file to bundle/models -> bundle/models/llama-2-7b-chat.Q4_K_M.gguf
 
-    docker run -p 8994:8994 --network host llm_crustacean:v1
+### 2. Build and run docker:
+```#bash
+docker build --network=host --tag llm_crustacean:v1 .
+
+docker run -p 8994:8994 --network host llm_crustacean:v1
+```
+
+### 3. To run tests:
+```
+python src/tests/test.py
 ```
 
 ```
